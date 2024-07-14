@@ -1,4 +1,4 @@
-# Ewt360ff
+# Etw360ff
 
 - 一个给 升学e网通 学生用户的辅助刷课脚本
 
@@ -18,7 +18,7 @@
 
 - 浏览器安装[油猴脚本](https://www.tampermonkey.net/)或其她用户脚本插件
 
-- 根据该用户脚本插件的指示安装[本脚本](https://github.com/SessionHu/ewt360ff/raw/main/index.js)
+- 根据该用户脚本插件的指示安装[本脚本](https://github.com/SessionHu/etw360ff/raw/main/index.js)
 
 ## 建议
 
