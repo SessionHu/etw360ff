@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Etw360ff
 // @namespace    org.sessx6cf.etw360ff
-// @version      0.1.0
+// @version      0.1.1
 // @description  Etw360ff
 // @author       SessionHu
 // @license      mit
@@ -24,6 +24,11 @@
             console.log("[Etw360ff] 开始播放了喵~");
             // 隐私保护
             document.querySelector(".uname-nW4AD").innerText = "Etw360ff";
+        }
+        // 自动跳过答题
+        const skipBtn = document.querySelector("div.btn.action-skip");
+        if (skipBtn !== null) {
+            skipBtn.click();
         }
         // 继续播放
         const continuePlayBtn = document.querySelector(`img[alt="继续播放"]`);
