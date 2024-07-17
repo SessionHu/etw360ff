@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Etw360ff
 // @namespace    org.sessx6cf.etw360ff
-// @version      0.1.1
+// @version      0.1.2
 // @description  Etw360ff
 // @author       SessionHu
 // @license      mit
@@ -29,6 +29,7 @@
         const skipBtn = document.querySelector("div.btn.action-skip");
         if (skipBtn !== null) {
             skipBtn.click();
+            console.log("[Etw360ff] 有题目! 喵喵才不做呢~");
         }
         // 继续播放
         const continuePlayBtn = document.querySelector(`img[alt="继续播放"]`);
@@ -39,7 +40,8 @@
         // 提示播放结束
         const videoDuration = document.querySelector("span.vjs-duration-display");
         const videoCurrent = document.querySelector("span.vjs-current-time-display");
-        if (videoCurrent !== null && videoDuration.innerText !== "0:00" && (videoDuration.innerText === videoCurrent.innerText)) {
+        if (videoCurrent !== null && videoCurrent.innerText !== "" && videoDuration.innerText !== "0:00" && (videoDuration.innerText === videoCurrent.innerText))
+        {
             window.clearInterval(sessEtw360ffIntervalId);
             console.log("[Etw360ff] 结束了喵!");
             document.title = "播放结束";
