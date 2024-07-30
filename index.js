@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Etw360ff
 // @namespace    org.sessx6cf.etw360ff
-// @version      0.1.2
+// @version      0.1.3
 // @description  Etw360ff
 // @author       SessionHu
 // @license      mit
@@ -53,7 +53,7 @@
             warningblock.style.bottom = 0
             warningblock.style.left = 0
             warningblock.style.zIndex = "1145141919810";
-            warningblock.innerHTML = `<h1 style="font-size:64px;color:#6cf;font-family:monospace;">播放结束! 可以退出了喵!</h1>`;
+            warningblock.innerHTML = `<h1 style="font-size:64px;color:#6cf;font-family:'zcool kuaile',monospace;">播放结束! 可以退出了喵!</h1>`;
             warningblock.onclick = () => {
                 warningblock.remove();
             };
